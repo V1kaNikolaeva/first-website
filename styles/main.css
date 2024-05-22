@@ -34,12 +34,12 @@ button {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   z-index: 4;
   top: 0;
   width: 100%;
   height: 120px;
-  background-color: #668e96;
+  background-color: #446e76;
 }
 
 .navigation {
@@ -89,7 +89,7 @@ button {
   align-items: center;
   position: absolute;
   width: 80%;
-  top: 10%;
+  top: 20%;
   left: 10%;
 }
 .title-image__wrapper h1 {
@@ -194,7 +194,13 @@ button {
 .inner__description {
   text-align: start;
 }
-
+.description {
+  margin-bottom: 30px;
+}
+.map {
+  width: 100%;
+  height: 500px;
+}
 .description__wrapper {
   display: flex;
   flex-direction: row;
@@ -321,7 +327,7 @@ button {
   }
 
   .title-image__wrapper {
-    top: 5%;
+    top: 15%;
   }
 }
 
