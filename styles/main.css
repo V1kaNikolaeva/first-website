@@ -75,12 +75,15 @@ button {
   background-color: transparent;
 }
 
-.image__contanier {
-  position: relative;
-  text-align: start;
-  height: 100%;
-  width: 100%;
-  color: #fff;
+.background-image {
+  background: url("../images/room-title1.jpg");
+width: 100%;
+height: 100%;
+color: #fff;
+position:absolute;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 .title-image__wrapper {
@@ -92,6 +95,11 @@ button {
   top: 20%;
   left: 10%;
 }
+/* .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;	
+} */
 .title-image__wrapper h1 {
   position: relative;
   font-size: 60px;
@@ -177,19 +185,25 @@ button {
 .content__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.background-image {
+/* .background-image {
   height: auto;
   width: 100%;
-}
+} */
 
 .inner__title {
   text-align: center;
-  margin: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color:#446e76;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: #fff;
 }
+
 
 .inner__description {
   text-align: start;
@@ -224,16 +238,21 @@ button {
   padding: 20px;
 }
 
+.image__contanier {
+  height: 100vh;
+  width: 100%;
+}
+
 .servises__contanier {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* max-width: 1300px; */
+  height: auto;
   width: 100%;
   margin: 40px;
   padding: 40px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 245px;
 }
 
 .objects__contanier,
@@ -247,7 +266,7 @@ button {
   width: 100%;
   margin: 40px;
   padding: 40px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 245px;
 }
 
 .servises__wrapper {
@@ -287,15 +306,15 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
-  .background-image {
+  /* .background-image {
     object-fit: cover;
     overflow-y: hidden;
     width: auto;
-  }
+  } */
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -328,6 +347,13 @@ button {
 
   .title-image__wrapper {
     top: 15%;
+  }
+
+  .servises__contanier,
+  .objects__contanier,
+  .contact__contanier,
+  .about__contanier {
+    scroll-margin-top: 205px;
   }
 }
 
